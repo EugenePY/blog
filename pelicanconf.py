@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+import os
 AUTHOR = 'Eugene Kow'
 SITENAME = 'Quantitative Research'
 SITEURL = ''
@@ -32,6 +33,7 @@ DEFAULT_PAGINATION = 5
 #RELATIVE_URLS = True
 MARKUP = ('md', 'ipynb')
 
-PLUGIN_PATH = './plugins'
-PLUGINS = ['ipynb.markup']
-THEME = 'c:/Users/i6800309/model_routine/quant_blog/theme/pelican-alchemy/alchemy'
+PLUGIN_PATHS = ['./plugins']
+PLUGINS = ['ipynb.markup', 'jinja']
+top = os.path.dirname(__file__)
+THEME = f'{top}/theme/pelican-alchemy/alchemy'
