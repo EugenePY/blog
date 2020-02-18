@@ -20,8 +20,7 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
+LINKS = (('Some links', '#'),)
 
 # Social widget
 SOCIAL = (('You can add links in your config file', '#'),
@@ -34,6 +33,6 @@ DEFAULT_PAGINATION = 5
 MARKUP = ('md', 'ipynb')
 
 PLUGIN_PATHS = ['./plugins']
-PLUGINS = ['ipynb.markup', 'jinja']
+PLUGINS = ['ipynb.markup', 'jinja', "math-jax"]
 top = os.path.dirname(__file__)
 THEME = f'{top}/theme/pelican-alchemy/alchemy'

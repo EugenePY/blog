@@ -4,3 +4,6 @@
 [submodule "theme/pelican-alchemy"]
 	path = theme/pelican-alchemy
 	url = https://github.com/nairobilug/pelican-alchemy
+[submodule "plugins/math-jax"]
+	path = plugins/math-jax
+	url = https://github.com/barrysteyn/pelican_plugin-render_math.git
