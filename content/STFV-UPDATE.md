@@ -6,4 +6,4 @@ Tags: pricing_model
 author: EugenePY
 Summary: signal_update
 
-USDJPY is overshooting
+USDJPY is overshooting.
