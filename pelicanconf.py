@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+import os
 AUTHOR = 'Eugene Kow'
 SITENAME = 'Quantitative Research'
 SITEURL = ''
@@ -19,19 +20,30 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
+# LINKS = (('Some links', '#'),)
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+# SOCIAL = (('You can add links in your config file', '#'),
+#          ('Another social link', '#'),)
 
 DEFAULT_PAGINATION = 5
-
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+# RELATIVE_URLS = True
 MARKUP = ('md', 'ipynb')
+TOP = os.path.dirname(__file__)
 
-PLUGIN_PATH = './plugins'
-PLUGINS = ['ipynb.markup']
-THEME = 'c:/Users/i6800309/model_routine/quant_blog/theme/pelican-alchemy/alchemy'
+#PATH = TOP
+MARKDOWN = {
+    'extension_configs': {
+        'markdown_bokeh.bokeh': {"base_path": TOP},
+        'markdown.extensions.codehilite': {'css_class': 'highlight'},
+        'markdown.extensions.extra': {},
+        'markdown.extensions.meta': {},
+    },
+    'output_format': 'html5'
+}
+#MD_EXTENSIONS = ['codehilite(css_class=highlight)','extra', "mdx_include"]
+
+PLUGIN_PATHS = ['./plugins']
+PLUGINS = ['ipynb.markup', 'jinja']
+THEME = f'{TOP}/theme/pelican-alchemy/alchemy'

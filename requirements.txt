@@ -6,3 +6,4 @@ nbconvert>=4.0
 beautifulsoup4
 ghp-import==0.4.1
 matplotlib
+pelican-jinja2content
