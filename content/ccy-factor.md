@@ -6,7 +6,7 @@ Category: stfv
 Tags: pricing_model, factor_model
 author: EugenePY
 Summary: Currency Factor Model Estimation
-Status: published
+Status: draft
 
 ### Data Generating Proccess
 

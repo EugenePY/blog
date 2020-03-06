@@ -6,7 +6,7 @@ Category: stfv
 Tags: pricing_model, factor_model
 author: EugenePY
 Summary: The general idea and movtivation
-Status: published
+Status: draft
 
 **Asset Pricing Model** 主要的研究是來自於CAMP的發展, 由Jack Treynor、William Sharpe、John Lintner、Jan Mossin
 主要研究者提出，主要敘述資產報酬與風險的關係。其中以Sharpe引用Markowitz的portfolio理論，在可規避的風險，且投資人只考慮mean-variance的架構下
