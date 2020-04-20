@@ -1,6 +1,6 @@
 ---
 Title: Short-Term Fair Value
-Date: 2020-05-06 20:00
+Date: 2020-03-13 08:30
 Category: stfv
 Tags: pricing_model, factor_model
 author: EugenePY
@@ -21,5 +21,4 @@ Hi all,
 {! output/static/assets/USDJPY !}()
 {! output/static/assets/NZDUSD !}()
 {! output/static/assets/USDCAD !}()
-
 ---
